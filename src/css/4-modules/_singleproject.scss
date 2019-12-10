@@ -1,0 +1,132 @@
+#single-project {
+	// position: relative;
+	// top: 100px;
+	.container {
+		padding: 7% 0;
+	}
+	.project {
+		display: flex;
+		justify-content: center;
+		@media only screen and (max-width: 1000px) {
+			flex-direction: column;
+		}
+
+		h3 {
+			opacity: 0.8;
+
+			margin-top: 0.5rem;
+			margin-bottom: 2rem;
+		}
+		&__box {
+			flex: 1;
+			&.rightSection {
+				padding-left: 5rem;
+				@media only screen and (max-width: 1000px) {
+					order: -1;
+					h1 {
+						font-size: 3em;
+					}
+					h3 {
+						font-size: 1.5em;
+					}
+				}
+				@media only screen and (max-width: 500px) {
+					padding-left: 0;
+					h1 {
+						font-size: 1.5em;
+					}
+					h3 {
+						font-size: 1em;
+					}
+				}
+			}
+		}
+		&__bio {
+			margin: 2rem 0;
+		}
+		&__title {
+		}
+		&__images {
+			position: relative;
+
+			img {
+				&:first-child {
+					z-index: 1;
+					position: absolute;
+					top: 0;
+					max-width: 63%;
+					// transition: all 0.3s ease-in-out;
+					// &:hover {
+					// 	transform: scale(1.5);
+					// 	z-index: 100;
+					// }
+				}
+				&:last-child {
+					z-index: 10;
+					position: absolute;
+					top: 129px;
+					max-width: 66%;
+					right: -27px;
+					// transition: all 0.3s ease-in-out;
+					// &:hover {
+					// 	transform: scale(1.5);
+					// 	z-index: 100;
+					// }
+				}
+			}
+			@media only screen and (max-width: 1000px) {
+				padding: 4rem 0;
+				img {
+					&:first-child {
+						top: 20%;
+						max-width: 45%;
+						margin: 0 auto;
+						text-align: center;
+						display: block;
+					}
+					&:last-child {
+						z-index: 10;
+						position: absolute;
+						top: 32%;
+						max-width: 53%;
+						right: 0%;
+						height: auto;
+					}
+				}
+			}
+			@media only screen and (max-width: 450px) {
+				padding: 4rem 0;
+				img {
+					&:first-child {
+						top: 20%;
+						max-width: 69%;
+						margin: 0 auto;
+						text-align: center;
+						display: block;
+					}
+					&:last-child {
+						z-index: 10;
+						position: absolute;
+						top: 117%;
+						max-width: 57%;
+						right: 0%;
+						height: auto;
+					}
+				}
+			}
+		}
+		&__skills {
+			padding: 3rem 0;
+			h4 {
+				margin-bottom: 0.5rem;
+			}
+		}
+		&__skllsGroup {
+			margin: 2rem 0;
+		}
+	}
+}
+#greyarea {
+	background: #f3f3f3;
+	padding: 7rem 0;
+}

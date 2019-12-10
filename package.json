@@ -1,0 +1,23 @@
+{
+  "name": "ParcelStarterKitFrontEnd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rigo De La Torre",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html --global index",
+    "production": "parcel build src/index.html --global index --no-cache --out-dir=build --no-source-maps"
+  },
+  "dependencies": {
+    "one": "^6.0.1",
+    "autoprefixer": "^9.6.1",
+    "postcss-modules": "^1.4.1"
+  },
+  "devDependencies": {
+    "browserslist": "^4.6.4",
+    "cssnano": "^4.1.10",
+    "posthtml-include": "^1.2.0",
+    "posthtml-modules": "^0.4.2",
+    "sass": "^1.22.3"
+  }
+}
