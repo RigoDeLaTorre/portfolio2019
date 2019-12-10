@@ -10194,11 +10194,16 @@ nav .brand-logo {
   color: #03a9f4;
   margin: 1rem;
   letter-spacing: 8px;
+  font-size: 1.5em;
 }
 @media only screen and (max-width: 1000px) {
   nav .brand-logo {
     width: 100%;
-    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  nav .brand-logo {
+    font-size: 1em;
   }
 }
 nav ul.right {
@@ -10208,6 +10213,16 @@ nav ul.right {
   padding: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+#mobile-demo {
+  background: #052a63;
+}
+#mobile-demo li {
+  border-bottom: 1px solid #11418c;
+}
+#mobile-demo li a {
+  color: #f3f3f3;
 }
 
 footer {
@@ -10311,9 +10326,11 @@ footer i {
 }
 #single-project .project__box.rightSection {
   padding-left: 5rem;
+  max-width: 60%;
 }
 @media only screen and (max-width: 1000px) {
   #single-project .project__box.rightSection {
+    max-width: 90%;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -10327,6 +10344,7 @@ footer i {
 }
 @media only screen and (max-width: 500px) {
   #single-project .project__box.rightSection {
+    max-width: 100%;
     padding-left: 0;
   }
   #single-project .project__box.rightSection h1 {
