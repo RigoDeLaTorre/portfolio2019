@@ -103,13 +103,26 @@
 		}
 		img {
 			max-width: 100%;
-			transition: all 0.3s ease-in-out;
+			min-height: 210px;
+		}
+		.projectBox {
 			cursor: pointer;
+			background: #f3f3f3;
+			text-align: center;
+			transition: all 0.3s ease-in-out;
 			&:hover {
-				transform: scale(1.2);
+				transform: scale(1.1);
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
 					0 6px 20px 0 rgba(0, 0, 0, 0.19);
 				z-index: 10;
+			}
+
+			p {
+				font-size: 1em;
+			}
+			&__description {
+				padding: 1rem;
+				min-height: 81px;
 			}
 		}
 	}

@@ -10166,16 +10166,27 @@ p {
 }
 #home #projects img {
   max-width: 100%;
+  min-height: 210px;
+}
+#home #projects .projectBox {
+  cursor: pointer;
+  background: #f3f3f3;
+  text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
 }
-#home #projects img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+#home #projects .projectBox:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 10;
+}
+#home #projects .projectBox p {
+  font-size: 1em;
+}
+#home #projects .projectBox__description {
+  padding: 1rem;
 }
 #home #about {
   padding: 7% 0;
